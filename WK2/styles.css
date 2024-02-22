@@ -1,22 +1,14 @@
-p:first-of-type {
-    color: red;
+.module {
+    width: 45%; /* Adjust width as needed */
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
-
-p:nth-of-type(2) {
-    color: white;
-    background-color: black;
+#internet-programming {
+    background-color: #ffcc00; /* Yellow */
 }
-
-p:nth-of-type(n+3):nth-of-type(-n+5),
-p:nth-of-type(7) {
-    color: green;
-}
-
-p:nth-of-type(4) {
-    color: green;
-    background-color: darkred;
-}
-
-p:nth-of-type(n+6):not(:nth-of-type(7)) {
-    color: black;
+#intelligent-systems {
+    background-color: #66ccff; /* Blue */
 }

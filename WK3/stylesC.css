@@ -1,0 +1,92 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.column {
+    float: left;
+    width: 50%;
+    background-color: #00008B;
+
+  }
+.column2 {
+    float: left;
+    width: 50%;
+    background-color: #90EE90;
+
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+header, footer, nav, aside {
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #006400;
+    color: #fff;
+    text-align: center;
+}
+header {
+    background-color: #0000FF;
+    color: #fff;
+    text-align: start;
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+nav{
+    background-color: #FFFF00;
+
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Three rows */
+    grid-gap: 10px;
+}
+
+nav, aside {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+nav {
+    grid-row: 2; /* Second row */
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+aside {
+    padding: 10px;
+}
+
+
